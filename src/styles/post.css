@@ -1,0 +1,22 @@
+.post {
+    /*width: 500px;*/
+    text-align: justify;
+    border: 2px solid antiquewhite;
+    padding: 12px;
+    line-height:  2;
+    opacity: 0.9;
+    max-height: 600px;
+    overflow-y:  scroll;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: antiquewhite;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: aquamarine;
+}

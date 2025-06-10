@@ -1,0 +1,31 @@
+---
+import '../styles/global.css'
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+const {pageTitle} = Astro.props
+---
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{pageTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100..900&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="content">
+    <Navigation/>
+    <main>
+        <h1>{pageTitle}</h1>
+        <slot/>
+    </main>
+    <Footer/>
+</div>
+</body>
+</html>

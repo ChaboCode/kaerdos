@@ -1,0 +1,63 @@
+html {
+    color: #e9e8e8;
+    font-family: "Roboto Serif", serif;
+    font-weight: 200;
+}
+
+body {
+    background-image: url("/public/bg.webp");
+    background-color: rgba(30, 31, 34, 0.82);
+    background-blend-mode: darken;
+    /*background-color: #1e1f22;*/
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+.content {
+    position: relative;
+    width: 1200px;
+    min-height: 500px;
+    max-height: 900px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:  1rem;
+
+    padding: 1rem;
+    background-color: rgba(30, 31, 34, 0.82);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    grid-column: 1 / span 2;
+}
+
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 26px;
+    height: min-content;
+    border: 2px solid antiquewhite;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 1;
+}
